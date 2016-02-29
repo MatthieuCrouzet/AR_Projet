@@ -54,26 +54,9 @@ public class Server {
 		e1.printStackTrace();
 	}
 
-	    /* récupération des hôtels de la chaîne dans le fichier xml passé en 2nd argument */
-	    DocumentBuilder docBuilder = null;
-	    Document doc=null;
-	    docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-	    doc = docBuilder.parse(new File(name));
 	
-	    NodeList list = doc.getElementsByTagName("Hotel");
-	    NamedNodeMap attrs;
-	    /* acquisition de toutes les entrées de la base d'hôtels */
-	    for(int i =0; i<list.getLength();i++) {
-	    	attrs = list.item(i).getAttributes();
-	    	name=attrs.getNamedItem("name").getNodeValue();
-	    	localisation=attrs.getNamedItem("localisation").getNodeValue();
-			hotels.add(new Hotel(name,localisation));
-
-   }
     try {
-    	
       	// A COMPLETER : CONSTRUCTION ET EXPORTATION DES OBJETS DISTANTS
-    	//....
     	
     	
 	    System.out.println("Tous les objets sont enregistr�s dans le serveur d'objets distants");
