@@ -22,4 +22,6 @@ public class Hotel {
 	 */
 	@Override
 	public String toString() {return "Hotel{"+name+","+localisation+"}";}
+	public String getLocalisation() {return this.localisation;}
+	public String getName() {return this.name;}
 }
