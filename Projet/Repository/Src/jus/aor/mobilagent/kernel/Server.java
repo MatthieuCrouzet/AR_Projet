@@ -15,23 +15,23 @@ import jus.aor.mobilagent.kernel.BAMAgentClassLoader;
 import jus.aor.mobilagent.kernel._Agent;
 
 /**
- * Le serveur principal permettant le lancement d'un serveur d'agents mobiles et les fonctions permettant de déployer des services et des agents.
+ * Le serveur principal permettant le lancement d'un serveur d'agents mobiles et les fonctions permettant de dÃ©ployer des services et des agents.
  * @author     Morat
  */
-public final class Server {
+public final class Server implements _Server {
 	/** le nom logique du serveur */
 	protected String name;
-	/** le port où sera ataché le service du bus à agents mobiles. Pafr défaut on prendra le port 10140 */
+	/** le port oÃ¹ sera atachÃ© le service du bus Ã  agents mobiles. Pafr dÃ©faut on prendra le port 10140 */
 	protected int port=10140;
-	/** le server d'agent démarré sur ce noeud */
+	/** le server d'agent dÃ©marrÃ© sur ce noeud */
 	protected AgentServer agentServer;
 	/** le nom du logger */
 	protected String loggerName;
 	/** le logger de ce serveur */
 	protected Logger logger=null;
 	/**
-	 * Démarre un serveur de type mobilagent 
-	 * @param port le port d'écuote du serveur d'agent 
+	 * DÃ©marre un serveur de type mobilagent 
+	 * @param port le port d'Ã©cuote du serveur d'agent 
 	 * @param name le nom du serveur
 	 */
 	public Server(final int port, final String name){
@@ -41,7 +41,7 @@ public final class Server {
 			/* mise en place du logger pour tracer l'application */
 			loggerName = "jus/aor/mobilagent/"+InetAddress.getLocalHost().getHostName()+"/"+this.name;
 			logger=Logger.getLogger(loggerName);
-			/* démarrage du server d'agents mobiles attaché à cette machine */
+			/* dÃ©marrage du server d'agents mobiles attachÃ© Ã  cette machine */
 			//A COMPLETER
 			/* temporisation de mise en place du server d'agents */
 			Thread.sleep(1000);
@@ -51,7 +51,7 @@ public final class Server {
 		}
 	}
 	/**
-	 * Ajoute le service caractérisé par les arguments
+	 * Ajoute le service caractÃ©risÃ© par les arguments
 	 * @param name nom du service
 	 * @param classeName classe du service
 	 * @param codeBase codebase du service
@@ -66,12 +66,12 @@ public final class Server {
 		}
 	}
 	/**
-	 * deploie l'agent caractérisé par les arguments sur le serveur
+	 * deploie l'agent caractÃ©risÃ© par les arguments sur le serveur
 	 * @param classeName classe du service
 	 * @param args arguments de construction de l'agent
 	 * @param codeBase codebase du service
-	 * @param etapeAddress la liste des adresse des étapes
-	 * @param etapeAction la liste des actions des étapes
+	 * @param etapeAddress la liste des adresse des Ã©tapes
+	 * @param etapeAction la liste des actions des Ã©tapes
 	 */
 	public final void deployAgent(String classeName, Object[] args, String codeBase, List<String> etapeAddress, List<String> etapeAction) {
 		try {
@@ -82,10 +82,10 @@ public final class Server {
 		}
 	}
 	/**
-	 * Primitive permettant de "mover" un agent sur ce serveur en vue de son exécution
-	 * immédiate.
-	 * @param agent l'agent devant être exécuté
-	 * @param loader le loader à utiliser pour charger les classes.
+	 * Primitive permettant de "mover" un agent sur ce serveur en vue de son exÃ©cution
+	 * immÃ©diate.
+	 * @param agent l'agent devant Ãªtre exÃ©cutÃ©
+	 * @param loader le loader Ã  utiliser pour charger les classes.
 	 * @throws Exception
 	 */
 	protected void startAgent(_Agent agent, BAMAgentClassLoader loader) throws Exception {

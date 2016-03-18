@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <root>
-<Hotel localisation="Paris" name="Chaine1Hotel0"/>
+<Hotel localisation="Grenoble" name="Chaine1Hotel0"/>
 <Hotel localisation="Paris" name="Chaine1Hotel1"/>
-<Hotel localisation="Paris" name="Chaine1Hotel2"/>
+<Hotel localisation="Grenoble" name="Chaine1Hotel2"/>
 <Hotel localisation="Paris" name="Chaine1Hotel3"/>
-<Hotel localisation="Paris" name="Chaine1Hotel4"/>
+<Hotel localisation="Grenoble" name="Chaine1Hotel4"/>
 <Hotel localisation="Paris" name="Chaine1Hotel5"/>
-<Hotel localisation="Paris" name="Chaine1Hotel6"/>
+<Hotel localisation="Lyon" name="Chaine1Hotel6"/>
 <Hotel localisation="Paris" name="Chaine1Hotel7"/>
-<Hotel localisation="Paris" name="Chaine1Hotel8"/>
-<Hotel localisation="Paris" name="Chaine1Hotel9"/>
-<Hotel localisation="Paris" name="Chaine1Hotel10"/>
-<Hotel localisation="Paris" name="Chaine1Hotel11"/>
+<Hotel localisation="Lyon" name="Chaine1Hotel8"/>
+<Hotel localisation="Lyon" name="Chaine1Hotel9"/>
+<Hotel localisation="Grenoble" name="Chaine1Hotel10"/>
+<Hotel localisation="Lyon" name="Chaine1Hotel11"/>
 <Hotel localisation="Paris" name="Chaine1Hotel12"/>
 <Hotel localisation="Paris" name="Chaine1Hotel13"/>
 <Hotel localisation="Paris" name="Chaine1Hotel14"/>
