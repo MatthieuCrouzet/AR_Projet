@@ -5,16 +5,12 @@ import java.net.URLClassLoader;
 
 public class BAMServerClassLoader extends URLClassLoader {
 
-	public BAMServerClassLoader(URL[] urls, ClassLoader parent) {
-		super(urls, parent);
+	public BAMServerClassLoader(URL[] urls, ClassLoader classLoader) {
 		// TODO Auto-generated constructor stub
+		super(urls);
 	}
 	
-	public void addURL(URL url){
-		
-	}
-	
-	public String toString(){
-		return "";
-	}
+
+
+
 }

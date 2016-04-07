@@ -30,4 +30,8 @@ public class Etape implements Serializable{
 	 */
 	@Override
 	public String toString() {return server+"("+action+")";}
+	public void execute() {
+		// TODO Auto-generated method stub
+		this.action.execute();
+	}
 }

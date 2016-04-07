@@ -11,7 +11,16 @@ import java.io.Serializable;
  */
 public interface _Action extends Serializable{
 	/** l'action vide */
-	public static final _Action NIHIL = 		/*A COMPLETER*/; 
+	public static final _Action NIHIL = new _Action(){
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+		public void execute(){
+			System.out.println("_Action NIHIL");
+		}
+	};
 	/**
 	 * Exécute l'action
 	 */

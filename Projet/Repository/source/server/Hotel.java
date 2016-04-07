@@ -23,7 +23,10 @@ public class Hotel implements Serializable {
 	 * @param name le nom de l'hôtel
 	 * @param localisation la localisation de l'hôtel
 	 */
-	public Hotel(String name, String localisation) { this.name=name; this.localisation=localisation;}
+	public Hotel(String name, String localisation) { 
+		this.name = name; 
+		this.localisation=localisation;
+	}
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
